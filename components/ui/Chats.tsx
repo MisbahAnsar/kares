@@ -97,7 +97,7 @@ export default function Chats({
                  <span>{msg.text}</span>
                </div>
                <Image
-                 src="https://pbs.twimg.com/profile_images/1873433936103419904/wsrNk4eR_400x400.jpg"
+                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXMMYlFDadWZBR8ee8PxvE941Gn38Tj22wColbJv1v-i8YbqWoKZyG7f4P&s=10"
                  alt={msg.sender}
                  className="w-10 h-10 rounded-full mr-2"
                />
