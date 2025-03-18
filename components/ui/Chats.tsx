@@ -128,62 +128,6 @@ export default function Chats({
   };
 
   return (
-<<<<<<< HEAD
-    <div className="px-2 sm:px-4 md:px-6">
-      <div className="mx-auto p-4 h-full border-2 rounded-xl border-gray-700 flex flex-col">
-        {/* Message Display Area */}
-        <div className="overflow-y-auto h-96 flex-grow mb-4">
-          {messages.map((msg, index) => (
-           <div
-           key={index}
-           className={`flex items-start gap-4 mb-2 ${
-             msg.sender === 'You' ? 'justify-end' : 'justify-start'
-           }`}
-         >
-           {/* Message Bubble */}
-           {msg.sender === 'You' ? (
-             <>
-               <div
-                 className={`p-2 rounded max-w-xs ${
-                   msg.sender === 'You'
-                     ? 'bg-red-500 text-white text-right'
-                     : 'bg-gray-700 text-white'
-                 }`}
-               >
-                 <strong>{msg.sender}: </strong>
-                 <span>{msg.text}</span>
-               </div>
-               <Image
-                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXMMYlFDadWZBR8ee8PxvE941Gn38Tj22wColbJv1v-i8YbqWoKZyG7f4P&s=10"
-                 alt={msg.sender}
-                 className="w-10 h-10 rounded-full mr-2"
-               />
-             </>
-           ) : (
-             <>
-               {msg.avatar && (
-                 <Image
-                   src={msg.avatar}
-                   alt={msg.sender}
-                   className="w-10 h-10 rounded-full"
-                 />
-               )}
-               <div
-                 className={`p-2 rounded max-w-xs ${
-                   msg.sender === 'You'
-                     ? 'bg-red-500 text-white text-right'
-                     : 'bg-gray-700 text-white'
-                 }`}
-               >
-                 <strong>{msg.sender}: </strong>
-                 <span>{msg.text}</span>
-               </div>
-             </>
-           )}
-         </div>
-         
-          ))}
-=======
     <div className="flex flex-col h-full bg-black md:bg-[hsl(12,1.75%,10.83%)] text-white">
       {/* Header Section */}
       <div className="flex items-center p-4 border-b border-zinc-900">
@@ -204,7 +148,6 @@ export default function Chats({
             <h2 className="font-semibold">{characterName}</h2>
             <p className="text-xs text-green-500">Online</p>
           </div>
->>>>>>> 22528d4 (made changes)
         </div>
       </div>
 
